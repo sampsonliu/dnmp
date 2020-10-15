@@ -1,0 +1,8 @@
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+<none>              <none>              3e225bc9cacc        2 hours ago         421MB
+<none>              <none>              add1e07f8918        8 hours ago         78.1MB
+<none>              <none>              3dbd645e8a4c        8 hours ago         61.5MB
+<none>              <none>              027ab3f019d1        8 hours ago         60.6MB
+httpd               2.4.46-alpine       35ab485181ce        2 months ago        56.1MB
+php                 5.6.40-fpm-alpine   6feac8f2ef42        20 months ago       54.5MB
