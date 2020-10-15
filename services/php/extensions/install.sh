@@ -473,23 +473,6 @@ if [[ -z "${EXTENSIONS##*,sodium,*}" ]]; then
 	fi
 fi
 
-if [[ -z "${EXTENSIONS##*,gearman,*}" ]]; then
-    echo "---------- Install gearman ----------"
-    apk add --no-cache boost boost-dev gperf libevent-dev
-    tar zxvf libuuid-1.0.3.tar.gz
-    cd libuuid-1.0.3/
-    ./configure
-    make && make install
-    cd ../
-    tar zxvf gearmand-1.1.12.tar.gz
-    cd gearmand-1.1.12/
-    ./configure
-    make && make install
-    /sbin/ldconfig
-    cd ../
-    installExtensionFromTgz gearman-1.1.2
-fi
-
 if [[ -z "${EXTENSIONS##*,amqp,*}" ]]; then
     echo "---------- Install amqp ----------"
     apk add --no-cache rabbitmq-c-dev
@@ -695,6 +678,15 @@ if [[ -z "${EXTENSIONS##*,sdebug,*}" ]]; then
     else
         echo "---------- PHP Version>= 7.2----------"
     fi
+fi
+
+if [[ -z "${EXTENSIONS##*,gearman,*}" ]]; then
+    echo "---------- Install gearman ----------"
+    apk add --no-cache boost boost-dev gperf libevent-dev
+    (cd gearmand/ && tar -zxvf libuuid-1.0.3.tar.gz && tar -zxvf gearmand-1.1.12.tar.gz) \
+    && (cd gearmand/libuuid-1.0.3/ && ./configure && make && make install) \
+    && (cd gearmand/gearmand-1.1.12/ && ./configure && make clean && make && make install && /sbin/ldconfig)
+    installExtensionFromTgz gearman-1.1.2
 fi
 
 if [ "${PHP_EXTENSIONS}" != "" ]; then
