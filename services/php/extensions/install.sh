@@ -69,7 +69,6 @@ installExtensionFromTgz()
     docker-php-ext-enable ${extensionName} $2
 }
 
-
 if [[ -z "${EXTENSIONS##*,pdo_mysql,*}" ]]; then
     echo "---------- Install pdo_mysql ----------"
     docker-php-ext-install ${MC} pdo_mysql
@@ -472,6 +471,23 @@ if [[ -z "${EXTENSIONS##*,sodium,*}" ]]; then
         apk add --no-cache libsodium-dev
         docker-php-ext-install ${MC} sodium
 	fi
+fi
+
+if [[ -z "${EXTENSIONS##*,gearman,*}" ]]; then
+    echo "---------- Install gearman ----------"
+    apk add --no-cache boost boost-dev gperf libevent-dev
+    tar zxvf libuuid-1.0.3.tar.gz
+    cd libuuid-1.0.3/
+    ./configure
+    make && make install
+    cd ../
+    tar zxvf gearmand-1.1.12.tar.gz
+    cd gearmand-1.1.12/
+    ./configure
+    make && make install
+    /sbin/ldconfig
+    cd ../
+    installExtensionFromTgz gearman-1.1.2
 fi
 
 if [[ -z "${EXTENSIONS##*,amqp,*}" ]]; then
