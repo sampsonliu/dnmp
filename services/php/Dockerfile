@@ -13,7 +13,7 @@ COPY ./extensions /tmp/extensions
 WORKDIR /tmp/extensions
 RUN chmod +x install.sh \
     && sh install.sh
-    # && rm -rf /tmp/extensions
+     && rm -rf /tmp/extensions
 
 ADD ./extensions/install-php-extensions  /usr/local/bin/
 
