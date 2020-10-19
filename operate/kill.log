@@ -1,8 +1,40 @@
 CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+Untagged: dnmp_php56:latest
+Deleted: sha256:214042522b4737c17387cb049f02c09b862f317a527a6a60dde964d236074d00
+Deleted: sha256:e5123fcea1dcf3a9508cdf4ae69d69d581e36466145c97e1421fd3d321039743
+Deleted: sha256:3527591a209d6841adba8585a03c559557b8612f63995232ed5d38a909c82ed1
+Deleted: sha256:3370f9486958ec33c4e62dfaa3e6a86348bf133a78a20ad14b6edb54a8630c4f
+Deleted: sha256:d040afb57e8cad483f10fee1afe60d3c91e23d4bd838df19e9f37e0fc0e5fa97
+Deleted: sha256:48169608c9470e700797fec7fb7af18ed0cda1d4b223a09e583ea18ae56be5bf
+Deleted: sha256:f6f7078fb998db16f93a589f9846ccd818cbfb026fd9a929e3482eff668d87a7
+Deleted: sha256:1ebf64377c836a41c8ac5277470696dad3af3c03364a7be615911fb4c28db267
+Deleted: sha256:967f2289670fd27e4c2fed2db43bcf751125de67ce9ed3d976063399732fd76c
+Deleted: sha256:d3fcabe578f37edf36f5d384b6d5aa06d932e5cd02e7765a2a7c5d91c813f03d
+Deleted: sha256:caa136e86939efaf267fdc3e039d038a2ff372c1d5b69850ceeb5feaeee02291
+Deleted: sha256:d4cb715f33e5fdefd2933b29061a5381d8cf7e72b84e658786a408496e37ce65
+Deleted: sha256:863e7fe4759981ffb9507329b46022d10348379b74b97943ffce974a2bdea4f7
+Deleted: sha256:16422063c03d637624310e03e8befead6b8a50da2945b305ca15b9bbd68bf233
+Deleted: sha256:e055ff5de27cb5fb04a32d43f220782fcee5a7efba09259dc2730811b4120a1e
+Deleted: sha256:620a35338cdc43d495b65d1f2876387021915a0cded68d00dbcbc0170235eeff
+Deleted: sha256:49089b38590c1cf61c8c7921e60ffe4aa181ed3da74f0754e74a45aef07d3e37
+Deleted: sha256:fb81ec9592a69e0bacc02cd57324af4d8d8c584a7d874ef9ac2aa790a3137805
+Deleted: sha256:f087a050e9238ca3cb67719c242543d83d2b0682525e28140d97ef5a08d41c6c
+Deleted: sha256:185e95a5e8166020e78cc24c536150121e339724ba7cc0fb618b074b91cb6fda
+Deleted: sha256:a941a223694b98391df4ac55a2d828f67d7d0ad47a1e035b5468d13063306859
+Deleted: sha256:cb315e6d63e684540785e183f679c7caa33938066335f6b6527da763b194794b
+Deleted: sha256:be0ef5e6c85785774b81f85aaa3a61e30a102b6e349a4903772a7da2c2f7cdd9
+Untagged: dnmp_apache:latest
+Deleted: sha256:391c3ec784715e984a42d1e7ca771f4e26a62ed5c8274b680efa998608595bc6
+Deleted: sha256:1672ead1afc32c15fdc234a1aa2ea3328dff19ab2432fd58e0ce65c1da818da5
+Deleted: sha256:627332531d75a430967f1578675f833845c364d2b59c9edc2593ff764eabc1a4
+Deleted: sha256:8af1d59523aec936c904eab0414d060f2fe3954ddd6f3cc72c777ffc9eadc4bd
+Deleted: sha256:4e96647b8990ac9ed9d5a445ff4085af33fb1eeaa2be21331e11306ad60a5fad
+Deleted: sha256:8e9ecd8f3dfbcbc7178e5c4abc92e0507135b8287c1cb5e097727af0a0341689
+Deleted: sha256:bb5d9925ff774f184948625d3ed981af81fd292cb11dcf744b1707d00189f898
 REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
-<none>              <none>              3e225bc9cacc        2 hours ago         421MB
-<none>              <none>              add1e07f8918        8 hours ago         78.1MB
-<none>              <none>              3dbd645e8a4c        8 hours ago         61.5MB
-<none>              <none>              027ab3f019d1        8 hours ago         60.6MB
+<none>              <none>              3e225bc9cacc        6 hours ago         421MB
+<none>              <none>              add1e07f8918        12 hours ago        78.1MB
+<none>              <none>              3dbd645e8a4c        12 hours ago        61.5MB
+<none>              <none>              027ab3f019d1        12 hours ago        60.6MB
 httpd               2.4.46-alpine       35ab485181ce        2 months ago        56.1MB
 php                 5.6.40-fpm-alpine   6feac8f2ef42        20 months ago       54.5MB
