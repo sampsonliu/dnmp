@@ -97,7 +97,7 @@ DNMP项目特点：
                                                         # Nginx、PHP7和MySQL8。要开启更多其他服务，如Redis、
                                                         # PHP5.6、PHP5.4、MongoDB，ElasticSearch等，请删
                                                         # 除服务块前的注释
-    $ docker-compose up                                 # 启动
+    $ sh start.sh                                       # 启动
     ```
 5. 在浏览器中访问：`http://localhost`或`https://localhost`(自签名HTTPS演示)就能看到效果，PHP代码在文件`./www/localhost/index.php`。
 
@@ -143,7 +143,7 @@ docker-compose build php
 ```sh
 docker exec -it php /bin/sh
 
-install-php-extensions apcu 
+install-php-extensions apcu
 ```
 2.支持快速安装扩展列表
 
@@ -293,7 +293,7 @@ docker exec -it php /bin/sh
 cd /www/localhost
 composer update
 ```
-    
+
 ## 4.管理命令
 ### 4.1 服务器启动和构建命令
 如需管理服务，请在命令后面加上服务器名称，例如：
@@ -429,7 +429,7 @@ Redis连接信息如下：
 ### 8.1 如何在PHP代码中使用curl？
 参考这个issue：[https://github.com/yeszao/dnmp/issues/91](https://github.com/yeszao/dnmp/issues/91)
 
-### 8.2 Docker使用cron定时任务 
+### 8.2 Docker使用cron定时任务
 [Docker使用cron定时任务](https://www.awaimai.com/2615.html)
 
 ### 8.3 Docker容器时间
